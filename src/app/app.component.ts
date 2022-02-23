@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  title = 'Kniznica';
+  title = 'Uloha1';
   decNumber: any;
   nums: any;
   isNumber7 = false;
@@ -19,22 +18,20 @@ export class AppComponent {
   isNumber1 = false;
   isNumber0 = false;
   ToBin() {
-
           if (this.decNumber > 255) {
           this.decNumber = 0
           }
           if  (this.decNumber <= 0){
             this.decNumber = 0
-
           }else
             this.isNumber7 = false;
-          this.isNumber6 = false;
-          this.isNumber5 = false;
-          this.isNumber4 = false;
-          this.isNumber3 = false;
-          this.isNumber2 = false;
-          this.isNumber1 = false;
-         this.isNumber0 = false;
+            this.isNumber6 = false;
+            this.isNumber5 = false;
+            this.isNumber4 = false;
+            this.isNumber3 = false;
+            this.isNumber2 = false;
+            this.isNumber1 = false;
+            this.isNumber0 = false;
     if (!this.decNumber || this.decNumber === '') return;
             this.nums = this.decNumber.toString(2).split('').reverse();
     if (!this.nums) return;
@@ -68,7 +65,6 @@ export class AppComponent {
 
 
   ToDec() {
-
             const nums = [];
 
             if (this.isNumber7) nums.push('1');
@@ -89,10 +85,6 @@ export class AppComponent {
             else nums.push('0');
             const number = nums.join('');
            return  this.decNumber = parseInt(number, 2).toString(10);
-
   }
-
-
-
 }
 
