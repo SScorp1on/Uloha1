@@ -1,0 +1,44 @@
+
+
+
+
+  <label for="dec">Dec: </label>
+  <input id="dec" type="number" [(ngModel)]="decNumber" (change)="ToBin()" >
+
+  <br>
+<div class="container">
+  <div class="number">
+  <label for="number7">7 </label>
+  <input type="checkbox" id="number7" [(ngModel)]="isNumber7" (change)="ToDec()" >
+  </div>
+  <div class="number">
+  <label for="number6">6 </label>
+  <input type="checkbox" id="number6" [(ngModel)]="isNumber6" (change)="ToDec()">
+    </div>
+  <div class="number">
+  <label for="number5">5 </label>
+  <input type="checkbox" id="number5" [(ngModel)]="isNumber5" (change)="ToDec()">
+    </div>
+  <div class="number">
+  <label for="number4">4 </label>
+  <input type="checkbox" id="number4" [(ngModel)]="isNumber4"(click)="ToDec()">
+    </div>
+  <div class="number">
+  <label for="number3">3 </label>
+  <input type="checkbox" id="number3" [(ngModel)]="isNumber3"(click)="ToDec()">
+    </div>
+  <div class="number">
+  <label for="number2">2 </label>
+  <input type="checkbox" id="number2" [(ngModel)]="isNumber2"(click)="ToDec()">
+  </div>
+  <div class="number">
+  <label for="number1">1 </label>
+  <input type="checkbox" id="number1"  [(ngModel)]="isNumber1"(click)="ToDec()">
+  </div>
+  <div class="number">
+  <label for="number0">0 </label>
+  <input type="checkbox" id="number0" [(ngModel)]="isNumber0" (click)="ToDec()">
+    </div>
+
+  </div>
+

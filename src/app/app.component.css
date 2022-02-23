@@ -1,0 +1,10 @@
+.container{
+  display: flex;
+
+
+}
+.number{
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+}
